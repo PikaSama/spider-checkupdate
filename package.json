@@ -1,0 +1,32 @@
+{
+  "name": "spider-checkupdate",
+  "version": "1.0.0",
+  "description": "A tool to fetch web pages to update something.",
+  "main": "main.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "inquirer": "^7.3.3",
+    "node-fetch": "^2.6.1",
+    "node-stream-zip": "^1.11.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pikasama/spider-checkupdate.git"
+  },
+  "keywords": [
+    "spider",
+    "nodejs",
+    "github"
+  ],
+  "author": "Zorin",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/pikasama/spider-checkupdate/issues"
+  },
+  "homepage": "https://github.com/pikasama/spider-checkupdate#readme"
+}
