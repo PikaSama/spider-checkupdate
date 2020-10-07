@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5725379d-a5ef-43b8-bead-8ad7d9d40561" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reset.js" beforeDir="false" afterPath="$PROJECT_DIR$/reset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601996522824</updated>
       <workItem from="1601996526630" duration="5698000" />
-      <workItem from="1602040754487" duration="4471000" />
+      <workItem from="1602040754487" duration="5538000" />
     </task>
     <servers />
   </component>
