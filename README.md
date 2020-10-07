@@ -39,9 +39,11 @@ node main.js
    
 ## 预览
 检测更新
+
 ![checkupdate.gif](https://i.loli.net/2020/10/07/CIlLnAkGST1QD3J.gif)
 
 设置
+
 ![cleardata.gif](https://i.loli.net/2020/10/07/jx2g1rhv3pQGKqF.gif)
 
 ## 注意
