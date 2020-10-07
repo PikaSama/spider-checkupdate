@@ -47,7 +47,7 @@ function checkAnswer() {
                     "Confirm",
                     "Cancel",
                 ],
-                default: "No",
+                default: "Cancel",
                 filter: val => val.toLowerCase()
             }
         ]).then(answer => {
