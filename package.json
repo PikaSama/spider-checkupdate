@@ -1,7 +1,7 @@
 {
   "name": "spider-checkupdate",
-  "version": "1.0.0",
-  "description": "A tool to fetch web pages to update something.",
+  "version": "1.1.0",
+  "description": "Fetch web pages tp update sth.",
   "main": "main.js",
   "dependencies": {
     "axios": "^0.20.0",
@@ -14,10 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pikasama/spider-checkupdate.git"
-  },
+  "repository": "git+https://github.com/pikasama/spider-checkupdate.git",
   "keywords": [
     "spider",
     "nodejs",
