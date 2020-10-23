@@ -38,7 +38,13 @@ node main.js
    - 清空数据（除hosts文件备份），恢复系统hosts文件
    
 ## 预览
-暂无
+检测更新
+
+![checkupdate.gif](https://i.loli.net/2020/10/07/CIlLnAkGST1QD3J.gif)
+
+设置
+
+![cleardata.gif](https://i.loli.net/2020/10/07/jx2g1rhv3pQGKqF.gif)
 
 ## 注意
 由于涉及到系统hosts文件的写入操作，如果需要自动替换hosts文件，请以超级用户的权限执行，但这可能会造成无法预料的问题，请慎重使用
