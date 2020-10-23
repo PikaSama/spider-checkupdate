@@ -21,10 +21,23 @@
    - 用于解压文件
  - inquirer
    - 用于选项菜单
+ - node >= 12
+   - 项目基于Nodejs v12.19.0开发
    
-因个人时间和精力有限，暂时没有做出Windows版，目前只支持Linux
+本项目仅在Linux平台运行并测试过，因个人时间和精力有限，未在Windows平台进行测试，如果你尝试以Windows平台运行，可能会造成问题（如果真有问题还请发至Issues）
+
+### 安装
+使用npm
 ```bash
 npm install
+```
+使用yarn
+```
+yarn
+```
+
+### 运行
+```bash
 node main.js
 ```
 ### 文件信息
