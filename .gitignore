@@ -5,3 +5,4 @@ resources
 settings.json
 package-lock.json
 yarn.lock
+test.js

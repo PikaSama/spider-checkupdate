@@ -1,7 +1,6 @@
 const conf = require("./settings.js");
 const axios = require("axios");
 const cheerio = require("cheerio");
-const fetch = require("node-fetch");
 const unzip = require("node-stream-zip");
 const fs = require("fs");
 let storage;
@@ -92,18 +91,12 @@ function jet() {
         console.error("\033[41;37m Error \033[0m "+err+"\n");
     });
     function downloadJet() {
-        fetch("http://idea.medeming.com/jets/images/jihuoma.zip").then(resp => resp.buffer()).then(data => {
-            fs.writeFile('resources/jetsCode.zip',data,'binary',err => {
-                if (err) {
-                    console.error("\033[41;37m Error \033[0m "+err+"\n");
-                }
-                else {
-                    chmod();
-                }
-            });
-        }).catch(err => {
-            console.error("\033[41;37m Error \033[0m "+err+"\n");
-        });
+        axios({
+            url:"http://idea.medeming.com/jets/images/jihuoma.zip",
+            responseType:'arraybuffer'
+        }).then(resp => resp.data).then(data => {
+            fs.writeFile('resources/jetsCode.zip',data,'binary',err => err ? console.error("\033[41;37m Error \033[0m "+err+"\n"):chmod())
+        }).catch(err => console.error("\033[41;37m Error \033[0m "+err+"\n"));
         function chmod() {
             fs.chmod('resources/jetsCode.zip',0o666,err => {
                 if (err) {
@@ -201,19 +194,13 @@ function gitlove() {
         console.error("\033[41;37m Error \033[0m "+err+"\n");
     });
     function downloadHosts() {
-        fetch("https://gitee.com/xueweihan/codes/6g793pm2k1hacwfbyesl464/raw?blob_name=GitHub520.yml").then(resp => resp.buffer()).then(data => {
+        axios({
+            url:"https://gitee.com/xueweihan/codes/6g793pm2k1hacwfbyesl464/raw?blob_name=GitHub520.yml",
+            responseType:'arraybuffer'
+        }).then(resp => resp.data).then(data => {
             hosts = data.toString();
-            fs.writeFile('resources/hosts',data,err => {
-                if (err) {
-                    console.error("\033[41;37m Error \033[0m "+err+"\n");
-                }
-                else {
-                    chmod();
-                }
-            });
-        }).catch(err => {
-            console.error("\033[41;37m Error \033[0m "+err+"\n");
-        });
+            fs.writeFile('resources/hosts',data,err => err ? console.error("\033[41;37m Error \033[0m "+err+"\n"):chmod());
+        }).catch(err => console.error("\033[41;37m Error \033[0m "+err+"\n"));
         function chmod() {
             fs.chmod('resources/hosts',0o666,err => {
                 if (err) {

@@ -12,11 +12,9 @@
 ## 如何使用
 项目依赖于：
  - axios
-   - 用于抓取页面
+   - 用于抓取页面和下载文件
  - cheerio
    - 用于解析页面
- - node-fetch
-   - 用于文件下载
  - node-stream-zip
    - 用于解压文件
  - inquirer
@@ -39,6 +37,11 @@ yarn
 ### 运行
 ```bash
 node main.js
+```
+
+如果hosts文件更新后未生效，请手动执行
+```bash
+sudo systemctl restart NetworkManager
 ```
 ### 文件信息
  - main.js
@@ -109,6 +112,8 @@ A5：
 暂无
 
 ## 更新日志
+2020.10.30-18:53 v1.1.1 移除node-fetch依赖，使用axios下载文件
+
 2020.10.7-12:47 v1.1.0 增加修改文件宿主和群组功能
 
 2020.10.7-00:23 v1.0.0 发布初始版本
