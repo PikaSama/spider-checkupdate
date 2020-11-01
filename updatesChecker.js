@@ -116,7 +116,7 @@ function jet() {
             console.log("\033[44;37m Info \033[0m Entries found: "+zip.entriesCount);
             for (let key in zip.entries()) {
                 console.log("\033[44;37m Info \033[0m |_ "+key);
-                if (key.match("later")) {
+                if (key.match("2018.1")) {
                     extract(key);
                     break;
                 }

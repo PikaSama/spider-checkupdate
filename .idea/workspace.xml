@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5725379d-a5ef-43b8-bead-8ad7d9d40561" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5725379d-a5ef-43b8-bead-8ad7d9d40561" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,6 +30,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,10 +53,29 @@
       <workItem from="1602512223763" duration="644000" />
       <workItem from="1602589072729" duration="1508000" />
       <workItem from="1602674854037" duration="48000" />
+      <workItem from="1604052054738" duration="4829000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1343" height="265" key="GridCell.Tab.0.bottom" timestamp="1604060775334">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1343" height="265" key="GridCell.Tab.0.bottom/0.26.1366.742@0.26.1366.742" timestamp="1604060775334" />
+    <state width="1343" height="265" key="GridCell.Tab.0.center" timestamp="1604060775330">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1343" height="265" key="GridCell.Tab.0.center/0.26.1366.742@0.26.1366.742" timestamp="1604060775330" />
+    <state width="1343" height="265" key="GridCell.Tab.0.left" timestamp="1604060775329">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1343" height="265" key="GridCell.Tab.0.left/0.26.1366.742@0.26.1366.742" timestamp="1604060775329" />
+    <state width="1343" height="265" key="GridCell.Tab.0.right" timestamp="1604060775332">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state width="1343" height="265" key="GridCell.Tab.0.right/0.26.1366.742@0.26.1366.742" timestamp="1604060775332" />
   </component>
 </project>
