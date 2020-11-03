@@ -1,4 +1,4 @@
-const referTo = require("./main.js");
+const go2main = require("./main.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 let userID;
@@ -65,7 +65,7 @@ function removeDirectory() {
             else {
                 console.log("\033[46;37m Succeed \033[0m Directory 'resources' has been deleted.\n");
             }
-            referTo.mainMenu();
+            go2main.mainMenu();
         });
     }
 }
@@ -73,7 +73,7 @@ exports.restoreHosts = () => {
     fs.copyFile('hosts.bak','/etc/hosts',err => {
         if (err) {
             console.error("\033[41;37m Error \033[0m "+err+"\n");
-            referTo.mainMenu();
+            go2main.mainMenu();
         }
         else {
             chmod();
@@ -87,7 +87,7 @@ exports.restoreHosts = () => {
             else {
                 console.log("\033[46;37m Succeed \033[0m Hosts has been restored.\n");
             }
-            referTo.mainMenu();
+            go2main.mainMenu();
         });
     }
 }
@@ -171,7 +171,7 @@ function chownDirectory() {
             else {
                 console.log("\033[46;37m Succeed \033[0m The owner and group of directory 'resources' has been changed.\n");
             }
-            referTo.mainMenu();
+            go2main.mainMenu();
         });
     }
 }

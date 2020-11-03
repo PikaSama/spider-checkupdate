@@ -1,6 +1,6 @@
 {
   "name": "spider-checkupdate",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "description": "Fetch web pages tp update sth.",
   "main": "main.js",
   "dependencies": {

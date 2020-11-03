@@ -1,4 +1,4 @@
-const updates = require("./updatesChecker.js");
+const checker = require("./updatesChecker.js");
 const cfg = require("./settings.js");
 const reset = require("./reset.js")
 const inquirer = require("inquirer");
@@ -32,7 +32,7 @@ function menu(){
 }
 function checkAnswer() {
     if (options.menu == "check updates") {
-        updates.check();
+        checker.check();
     }
     else if(options.menu == "settings") {
         cfg.settings();

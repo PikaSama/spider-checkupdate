@@ -178,11 +178,9 @@ function jet() {
 }
 function gitlove() {
     console.log("\033[44;37m Info \033[0m Fetching pages... : Github 520 Hosts");
-    axios.get("https://github.com/521xueweihan/GitHub520").then(resp => {
-        let $ = cheerio.load(resp.data);
-        gitDate = $("p").eq(13).text().replace(/[^0-9]/ig,"");
-        console.log("\033[46;37m Succeed \033[0m Fetched.\n");
-        console.log("\033[44;37m Info \033[0m Checking updates...");
+    axios.get("https://cdn.jsdelivr.net/gh/521xueweihan/GitHub520@master/README.md").then(resp => resp.data).then(data => {
+        data=data.split("\n");
+        gitDate = data[52].replace(/[^0-9]/ig,"");
         if (gitDate != storage.github) {
             console.log("\033[43;37m Update \033[0m Found updates! Downloading...");
             downloadHosts();
@@ -190,14 +188,9 @@ function gitlove() {
         else {
             console.log("\033[45;37m Final \033[0m No available updates. Hosts are the latest. :)\n");
         }
-    }).catch(err => {
-        console.error("\033[41;37m Error \033[0m "+err+"\n");
-    });
+    }).catch(err => console.error("\033[41;37m Error \033[0m "+err+"\n"));
     function downloadHosts() {
-        axios({
-            url:"https://gitee.com/xueweihan/codes/6g793pm2k1hacwfbyesl464/raw?blob_name=GitHub520.yml",
-            responseType:'arraybuffer'
-        }).then(resp => resp.data).then(data => {
+        axios.get("https://gitee.com/xueweihan/codes/6g793pm2k1hacwfbyesl464/raw?blob_name=GitHub520.yml", {responseType:'arraybuffer'}).then(resp => resp.data).then(data => {
             hosts = data.toString();
             fs.writeFile('resources/hosts',data,err => err ? console.error("\033[41;37m Error \033[0m "+err+"\n"):chmod());
         }).catch(err => console.error("\033[41;37m Error \033[0m "+err+"\n"));

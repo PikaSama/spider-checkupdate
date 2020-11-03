@@ -1,4 +1,4 @@
-const jumpTo = require("./main.js");
+const toMain = require("./main.js");
 const inquirer = require("inquirer");
 const fs = require("fs");
 let config;
@@ -62,7 +62,7 @@ function writeCfg() {
             }
             else {
                 console.log("\033[46;37m Succeed \033[0m File has been written successfully.");
-                jumpTo.mainMenu();
+                toMain.mainMenu();
             }
         });
     }
