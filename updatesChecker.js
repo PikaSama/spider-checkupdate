@@ -178,7 +178,7 @@ function jet() {
 }
 function gitlove() {
     console.log("\033[44;37m Info \033[0m Fetching pages... : Github 520 Hosts");
-    axios.get("https://github.com.cnpmjs.org/521xueweihan/GitHub520").then(resp => {
+    axios.get("https://github.com/521xueweihan/GitHub520").then(resp => {
         let $ = cheerio.load(resp.data);
         gitDate = $("p").eq(13).text().replace(/[^0-9]/ig,"");
         console.log("\033[46;37m Succeed \033[0m Fetched.\n");

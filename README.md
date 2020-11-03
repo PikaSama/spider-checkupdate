@@ -1,8 +1,11 @@
 # spider-checkupdate
 ![Author](https://img.shields.io/static/v1?label=Author&message=Zorin&color=9cf&style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/PikaSama/spider-checkupdate?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/PikaSama/spider-checkupdate?color=success&style=for-the-badge)
+
 ![GitHub top language](https://img.shields.io/github/languages/top/pikasama/spider-checkupdate?style=for-the-badge)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/pikasama/spider-checkupdate?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/PikaSama/spider-checkupdate?color=ff69b4&style=for-the-badge)
+
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/PikaSama/spider-checkupdate?color=%23007ec6&include_prereleases&style=for-the-badge)
 
 一个自己写的nodejs爬虫练习，用于爬取idea全家桶激活码和github520项目，获取更新的日期并进行比对，如不一致则进行更新
 
@@ -11,16 +14,26 @@
 如果你有更好的实现方法，欢迎 PR/Issues/...
 ## 如何使用
 项目依赖于：
- - axios
-   - 用于抓取页面和下载文件
- - cheerio
-   - 用于解析页面
- - node-stream-zip
-   - 用于解压文件
- - inquirer
-   - 用于选项菜单
- - node >= 12
-   - 项目基于Nodejs v12.19.0开发
+
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/PikaSama/spider-checkupdate/axios?style=flat-square)
+
+用于抓取页面和下载文件
+   
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/PikaSama/spider-checkupdate/cheerio?style=flat-square)
+
+用于解析页面
+   
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/PikaSama/spider-checkupdate/node-stream-zip?style=flat-square)
+
+用于解压文件
+   
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/PikaSama/spider-checkupdate/inquirer?style=flat-square)
+
+用于选项菜单
+   
+![Node version](https://img.shields.io/static/v1?label=node&message=>=12&color=success&style=flat-square)
+
+项目基于Nodejs v12.19.0开发
    
 本项目仅在Linux平台运行并测试过，因个人时间和精力有限，未在Windows平台进行测试，如果你尝试以Windows平台运行，可能会造成问题（如果真有问题还请发至Issues）
 
