@@ -1,10 +1,10 @@
 # spider-checkupdate
 ![Author](https://img.shields.io/static/v1?label=Author&message=Zorin&color=9cf&style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/PikaSama/spider-checkupdate?color=success&style=for-the-badge)
+![Platform](https://img.shields.io/static/v1?label=Platform&message=Linux&color=orange&style=for-the-badge)
 
 ![GitHub top language](https://img.shields.io/github/languages/top/pikasama/spider-checkupdate?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/PikaSama/spider-checkupdate?color=ff69b4&style=for-the-badge)
-
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/PikaSama/spider-checkupdate?color=%23007ec6&include_prereleases&style=for-the-badge)
 
 一个自己写的nodejs爬虫练习，用于爬取idea全家桶激活码和github520项目，获取更新的日期并进行比对，如不一致则进行更新
