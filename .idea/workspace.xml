@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5725379d-a5ef-43b8-bead-8ad7d9d40561" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/updatesChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/updatesChecker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codes/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/fileChecker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/misc.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/settings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/updatesChecker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -26,10 +34,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$APPLICATION_PLUGINS_DIR$/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -57,6 +67,8 @@
       <workItem from="1602674854037" duration="48000" />
       <workItem from="1604052054738" duration="4829000" />
       <workItem from="1604401193987" duration="990000" />
+      <workItem from="1608367682662" duration="1119000" />
+      <workItem from="1608905575625" duration="9913000" />
     </task>
     <servers />
   </component>

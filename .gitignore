@@ -1,8 +1,6 @@
-node_modules
-.idea
+node_modules/
 data.json
 resources
 settings.json
 package-lock.json
 yarn.lock
-test.js
