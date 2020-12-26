@@ -130,6 +130,7 @@ function writeJetData() {
                     if (settings.displayJetCode === 'yes') {
                         misc_1.Logger.info('Acivation code: \n' + code + '\n');
                     }
+                    gitHosts();
                 }
             });
         }

@@ -4,11 +4,9 @@
     <list default="true" id="5725379d-a5ef-43b8-bead-8ad7d9d40561" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/buildFile.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/buildFile.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/modules/fileChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/fileChecker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/modules/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/misc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/codes/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/codes/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/updatesChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/updatesChecker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/fileChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/fileChecker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/misc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/misc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/codes/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/codes/test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/updatesChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/updatesChecker.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,29 +67,11 @@
       <workItem from="1604401193987" duration="990000" />
       <workItem from="1608367682662" duration="1119000" />
       <workItem from="1608905575625" duration="10336000" />
-      <workItem from="1608954063878" duration="3616000" />
+      <workItem from="1608954063878" duration="5378000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1343" height="260" key="GridCell.Tab.0.bottom" timestamp="1604402183752">
-      <screen x="0" y="26" width="1366" height="742" />
-    </state>
-    <state width="1343" height="260" key="GridCell.Tab.0.bottom/0.26.1366.742@0.26.1366.742" timestamp="1604402183752" />
-    <state width="1343" height="260" key="GridCell.Tab.0.center" timestamp="1604402183751">
-      <screen x="0" y="26" width="1366" height="742" />
-    </state>
-    <state width="1343" height="260" key="GridCell.Tab.0.center/0.26.1366.742@0.26.1366.742" timestamp="1604402183751" />
-    <state width="1343" height="260" key="GridCell.Tab.0.left" timestamp="1604402183750">
-      <screen x="0" y="26" width="1366" height="742" />
-    </state>
-    <state width="1343" height="260" key="GridCell.Tab.0.left/0.26.1366.742@0.26.1366.742" timestamp="1604402183750" />
-    <state width="1343" height="260" key="GridCell.Tab.0.right" timestamp="1604402183751">
-      <screen x="0" y="26" width="1366" height="742" />
-    </state>
-    <state width="1343" height="260" key="GridCell.Tab.0.right/0.26.1366.742@0.26.1366.742" timestamp="1604402183751" />
   </component>
 </project>

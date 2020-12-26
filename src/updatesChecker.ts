@@ -142,6 +142,7 @@ function writeJetData(): void {
                     if (settings.displayJetCode === 'yes') {
                         Logger.info('Acivation code: \n' + code + '\n');
                     }
+                    gitHosts();
                 }
             });
         }

@@ -867,14 +867,14 @@
         "affectsGlobalScope": false
       },
       "../src/updatesChecker.ts": {
-        "version": "c2b202e08b3468e969ca1dfc9b17a1bca9603eea8f7501c0b861c4241557333b",
+        "version": "5fd654f0b8e8f025d9474b2be79a933c30c90ce8ff2f7ff3200267409c915f08",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
       "../src/codes/test.ts": {
-        "version": "b80112c06818d86d16f0185c023439b4364af3c61971b8eaeb90d6f094dc8a6b",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": true
+        "version": "575a751bb7bee51ecc23980cd3463ac9cb37b4a51fc593ace34791ccae30cd1d",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
       }
     },
     "options": {
@@ -1485,6 +1485,10 @@
       ],
       "../node_modules/rxjs/internal/util/pipe.d.ts": [
         "../node_modules/rxjs/internal/types.d.ts"
+      ],
+      "../src/codes/test.ts": [
+        "../node_modules/@types/node/os.d.ts",
+        "../src/modules/misc.ts"
       ],
       "../src/modules/fileChecker.ts": [
         "../node_modules/@types/node/fs.d.ts",
