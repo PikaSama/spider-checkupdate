@@ -34,8 +34,8 @@ function checker(callback) {
                 mkdir();
             }
             else {
-                misc_1.Logger.info("Found directory: 'resources'.");
-                compositeResult();
+                misc_1.Logger.info("Found directory: 'resources'.\n");
+                callback(null, result);
             }
         });
         function mkdir() {
@@ -55,13 +55,10 @@ function checker(callback) {
                 }
                 else {
                     misc_1.Logger.succ('Created.\n');
-                    compositeResult();
+                    callback(null, result);
                 }
             });
         }
-    }
-    function compositeResult() {
-        callback(null, result);
     }
 }
 exports.checker = checker;

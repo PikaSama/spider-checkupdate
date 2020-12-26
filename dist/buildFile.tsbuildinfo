@@ -406,6 +406,11 @@
         "signature": "46f663eeae291f61998423a4f6c95a1184c6ed72167ed37ab0db5bfb7b3349b9",
         "affectsGlobalScope": true
       },
+      "../node_modules/node-stream-zip/node_stream_zip.d.ts": {
+        "version": "5429370e083b9bffab6819536984f1027495d7b49a69ab1eed0a3b404f22f42c",
+        "signature": "5429370e083b9bffab6819536984f1027495d7b49a69ab1eed0a3b404f22f42c",
+        "affectsGlobalScope": false
+      },
       "../node_modules/rxjs/internal/Subscription.d.ts": {
         "version": "6cb35d83d21a7e72bd00398c93302749bcd38349d0cc5e76ff3a90c6d1498a4d",
         "signature": "6cb35d83d21a7e72bd00398c93302749bcd38349d0cc5e76ff3a90c6d1498a4d",
@@ -841,18 +846,13 @@
         "signature": "0d04746f0d66d61071b401646135da06084b4fc890e81a3a6641810f14f7cd90",
         "affectsGlobalScope": false
       },
-      "../node_modules/node-stream-zip/node_stream_zip.d.ts": {
-        "version": "5429370e083b9bffab6819536984f1027495d7b49a69ab1eed0a3b404f22f42c",
-        "signature": "5429370e083b9bffab6819536984f1027495d7b49a69ab1eed0a3b404f22f42c",
-        "affectsGlobalScope": false
-      },
       "../node_modules/chalk/index.d.ts": {
         "version": "0d14fa22c41fdc7277e6f71473b20ebc07f40f00e38875142335d5b63cdfc9d2",
         "signature": "0d14fa22c41fdc7277e6f71473b20ebc07f40f00e38875142335d5b63cdfc9d2",
         "affectsGlobalScope": false
       },
       "../src/modules/misc.ts": {
-        "version": "ea1cf96a96f428792a8f8a2860baaf050672cb93680414f35dbc24c2db3fde53",
+        "version": "3457133c1c57d089c9f053468c5f797ff3ec6b6d8c355f2be3a0036ee905b18f",
         "signature": "0bb9a92c8ca1f118f4653ae13b330e2b89638b43fc98c8762ce779510c034a0b",
         "affectsGlobalScope": false
       },
@@ -862,12 +862,12 @@
         "affectsGlobalScope": false
       },
       "../src/modules/fileChecker.ts": {
-        "version": "7c713fa0a010fb6983a3abb9a92fbb1be61b7238144ca180ba0abfdbda026496",
+        "version": "6f06838ad2508169d6ebecb099e08c6b6fd836f9cb46f44f8f9bf6963d3a7087",
         "signature": "1aa21dc418a97888c08ecf7fc745021102606abd1862035862b429311d437334",
         "affectsGlobalScope": false
       },
       "../src/updatesChecker.ts": {
-        "version": "b5e7f1d14e612ce7a9c898543ff16fcddcd82a4f60d0cb8a696c4d9574f440ba",
+        "version": "c2b202e08b3468e969ca1dfc9b17a1bca9603eea8f7501c0b861c4241557333b",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -1502,7 +1502,6 @@
       ],
       "../src/updatesChecker.ts": [
         "../node_modules/@types/cheerio/index.d.ts",
-        "../node_modules/@types/inquirer/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/axios/index.d.ts",
         "../node_modules/node-stream-zip/node_stream_zip.d.ts",

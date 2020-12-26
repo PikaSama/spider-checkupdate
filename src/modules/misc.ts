@@ -34,9 +34,18 @@ const Logger = {
 function downloadFile(path: string,url: string,config: AxiosRequestConfig = {},callback: CallbackFn): void {
     config.responseType = 'stream';
     const writer: fs.WriteStream = fs.createWriteStream(path);
-    axios.get(url,config).then(({ data }): void => data.pipe(writer));
-    writer.on("finish",(): void => callback(null));
-    writer.on("error",(): void => callback('error'))
+    axios.get(url,config).then(({ data }): void => data.pipe(writer)).catch((err): void => callback(err));
+    writer.on("finish",(): void => {
+        fs.readFile(path,'utf8',(err,data): void => {
+            if (err) {
+                callback(err);
+            }
+            else {
+                callback(null,{ fileContent: data });
+            }
+        });
+    });
+    writer.on("error",(): void => callback('error'));
 }
 
 // 更改文件&目录权限 -- 模块

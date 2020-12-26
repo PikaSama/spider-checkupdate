@@ -24,8 +24,17 @@ exports.Logger = Logger;
 function downloadFile(path, url, config = {}, callback) {
     config.responseType = 'stream';
     const writer = fs.createWriteStream(path);
-    axios_1.default.get(url, config).then(({ data }) => data.pipe(writer));
-    writer.on("finish", () => callback(null));
+    axios_1.default.get(url, config).then(({ data }) => data.pipe(writer)).catch((err) => callback(err));
+    writer.on("finish", () => {
+        fs.readFile(path, 'utf8', (err, data) => {
+            if (err) {
+                callback(err);
+            }
+            else {
+                callback(null, { fileContent: data });
+            }
+        });
+    });
     writer.on("error", () => callback('error'));
 }
 exports.downloadFile = downloadFile;

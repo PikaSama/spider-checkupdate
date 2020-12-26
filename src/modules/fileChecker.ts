@@ -38,8 +38,8 @@ function checker(callback: CallbackFn): void {
                 mkdir();
             }
             else {
-                Logger.info("Found directory: 'resources'.");
-                compositeResult();
+                Logger.info("Found directory: 'resources'.\n");
+                callback(null,result);
             }
         });
 
@@ -61,14 +61,10 @@ function checker(callback: CallbackFn): void {
                 }
                 else {
                     Logger.succ('Created.\n');
-                    compositeResult();
+                    callback(null,result);
                 }
             });
         }
-    }
-
-    function compositeResult(): void {
-        callback(null,result);
     }
 }
 

@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5725379d-a5ef-43b8-bead-8ad7d9d40561" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/codes/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/fileChecker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/misc.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/settings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/updatesChecker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/buildFile.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/dist/buildFile.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modules/fileChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/fileChecker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modules/misc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/misc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/updatesChecker.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/updatesChecker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/fileChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/fileChecker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/misc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/misc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/updatesChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/updatesChecker.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,8 @@
       <workItem from="1604052054738" duration="4829000" />
       <workItem from="1604401193987" duration="990000" />
       <workItem from="1608367682662" duration="1119000" />
-      <workItem from="1608905575625" duration="9913000" />
+      <workItem from="1608905575625" duration="10336000" />
+      <workItem from="1608954063878" duration="3616000" />
     </task>
     <servers />
   </component>
