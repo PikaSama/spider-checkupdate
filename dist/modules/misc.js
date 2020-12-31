@@ -13,10 +13,15 @@ const axios_1 = require("axios");
 const fs = require("fs");
 // 日志打印 -- 模块
 const Logger = {
+    errStr: (msg) => `${chalk_1.whiteBright.bgRed(' Error ')} ${msg}`,
     err: (msg) => console.log(`${chalk_1.whiteBright.bgRed(' Error ')} ${msg}`),
+    warnStr: (msg) => `${chalk_1.whiteBright.bgRed(' Warn ')} ${msg}`,
     warn: (msg) => console.log(`${chalk_1.whiteBright.bgRed(' Warn ')} ${msg}`),
+    infoStr: (msg) => `${chalk_1.whiteBright.bgBlue(' Info ')} ${msg}`,
     info: (msg) => console.log(`${chalk_1.whiteBright.bgBlue(' Info ')} ${msg}`),
+    succStr: (msg) => `${chalk_1.whiteBright.bgGreen(' Success ')} ${msg}`,
     succ: (msg) => console.log(`${chalk_1.whiteBright.bgGreen(' Success ')} ${msg}`),
+    updStr: (msg) => `${chalk_1.whiteBright.bgYellow(' Update ')} ${msg}`,
     upd: (msg) => console.log(`${chalk_1.whiteBright.bgYellow(' Update ')} ${msg}`),
 };
 exports.Logger = Logger;
