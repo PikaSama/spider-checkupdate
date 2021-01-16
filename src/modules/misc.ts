@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /**
  * Author: Zorin
  * Github: https://github.com/PikaSama
@@ -11,52 +12,61 @@ import axios, { AxiosRequestConfig } from "axios";
 
 import * as fs from 'fs';
 
-// 规范回调结果的接口 -- 模块
+// 回调结果 -- 模块
 interface Result {
     [prop: string]: string,
 }
 
-// 规范回调函数的接口 -- 模块
-interface CallbackFn {
-    (err: NodeJS.ErrnoException | string | null,result?: Result): void,
-}
+// 错误类型
+type ErrorSets = NodeJS.ErrnoException | string | null;
+
+// 回调函数 -- 模块
+type CallbackFn = (err: ErrorSets,result?: Result) => void;
 
 // 日志打印 -- 模块
 const Logger = {
-    errStr: (msg: string | NodeJS.ErrnoException): string => `${chalk.bgRed(' Error ')} ${msg}`,
-    err: (msg: string | NodeJS.ErrnoException): void => console.log(`${chalk.bgRed(' Error ')} ${msg}`),
-    warnStr: (msg: string): string => `${chalk.bgRed(' Warn ')} ${msg}`,
-    warn: (msg: string): void => console.log(`${chalk.bgRed(' Warn ')} ${msg}`),
-    infoStr: (msg: string): string => `${chalk.bgBlue(' Info ')} ${msg}`,
+    err: (msg: ErrorSets): void => console.log(`${chalk.bgRed(' Error ')} ${msg}`),
+    warn: (msg: ErrorSets): void => console.log(`${chalk.bgRed(' Warn ')} ${msg}`),
     info: (msg: string): void => console.log(`${chalk.bgBlue(' Info ')} ${msg}`),
-    succStr: (msg: string): string => `${chalk.bgGreen(' Success ')} ${msg}`,
-    succ: (msg: string): void => console.log(`${chalk.bgGreen(' Success ')} ${msg}`),
-    updStr: (msg: string): string => `${chalk.bgYellow(' Update ')} ${msg}`,
+    done: (msg: string): void => console.log(`${chalk.bgGreen(' Done ')} ${msg}`),
     upd: (msg: string): void => console.log(`${chalk.bgYellow(' Update ')} ${msg}`),
+    str: {
+        err: (msg: ErrorSets): string => `${chalk.bgRed(' Error ')} ${msg}`,
+        warn: (msg: ErrorSets): string => `${chalk.bgRed(' Warn ')} ${msg}`,
+        info: (msg: string): string => `${chalk.bgBlue(' Info ')} ${msg}`,
+        done: (msg: string): string => `${chalk.bgGreen(' Done ')} ${msg}`,
+        upd: (msg: string): string => `${chalk.bgYellow(' Update ')} ${msg}`,
+    },
+}
+
+// 文件下载参数
+interface DownloadParams {
+    path: string,
+    url: string,
 }
 
 // 下载文件 -- 模块
-function downloadFile(path: string,url: string,config: AxiosRequestConfig = {},callback: CallbackFn): void {
+function downloadFile({ path, url }: DownloadParams, callback: CallbackFn, config: AxiosRequestConfig = {}): void {
     config.responseType = 'stream';
     const writer: fs.WriteStream = fs.createWriteStream(path);
-    axios.get(url,config).then(({ data }): void => data.pipe(writer)).catch((err): void => callback(err));
-    writer.on("finish",(): void => {
-        fs.readFile(path,'utf8',(err,data): void => {
+    axios.get(url, config).then(({ data }): void => data.pipe(writer)).catch((err): void => callback(err));
+    writer.on('finish', (): void => {
+        fs.readFile(path, 'utf8', (err,data): void => {
             if (err) {
                 callback(err);
             }
             else {
-                callback(null,{ fileContent: data });
+                callback(null, { fileContent: data });
             }
         });
     });
-    writer.on("error",(): void => callback('error'));
+    writer.on('error', (): void => callback('error'));
 }
 
 // 更改文件&目录权限 -- 模块
-function changeMode(path: string,isDir: number | boolean,callback: CallbackFn): void {
+function changeMode(path: string, callback: CallbackFn, isDir = 0): void {
     if (isDir) {
-        fs.chmod(path,0o777,(err): void => {
+        fs.chmod(path, 0o777, (err): void => {
             if (err) {
                 callback(err);
             }
@@ -66,7 +76,7 @@ function changeMode(path: string,isDir: number | boolean,callback: CallbackFn): 
         });
     }
     else {
-        fs.chmod(path,0o666,(err): void => {
+        fs.chmod(path, 0o666, (err): void => {
             if (err) {
                 callback(err);
             }
@@ -83,4 +93,4 @@ export {
     downloadFile,
     changeMode,
     Logger,
-}
+};

@@ -17,14 +17,14 @@ import {
 } from "./misc";
 
 function checkFile(callback: CallbackFn): void {
-    fs.readFile('settings.json','utf8',(err,data): void => {
+    fs.readFile('settings.json', 'utf8', (err,data): void => {
         if (err) {
             Logger.warn('Settings file \'settings.json\' doesn\'t exist. \n');
             guide();
         }
         else {
             Logger.info("Found settings file 'settings.json' .");
-            callback(null,JSON.parse(data));
+            callback(null, JSON.parse(data));
         }
     });
 
@@ -63,17 +63,17 @@ function checkFile(callback: CallbackFn): void {
             }
         ]).then((answer: Result): void => {
             Logger.info('Writing settings file...');
-            fs.writeFile('settings.json',JSON.stringify(answer),(err) => {
+            fs.writeFile('settings.json', JSON.stringify(answer), (err) => {
                 if (err) {
                     callback(err);
                 }
                 else {
-                    Logger.succ('Settings has saved.');
-                    callback(null,answer);
+                    Logger.done('Settings has saved.');
+                    callback(null, answer);
                 }
             });
         });
     }
 }
 
-export { checkFile }
+export { checkFile };

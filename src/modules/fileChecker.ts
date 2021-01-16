@@ -20,7 +20,7 @@ function checker(callback: CallbackFn): void {
         hostsDate: '',
         codeDate: '',
     };
-    fs.readFile('data.json','utf8',(err,data): void => {
+    fs.readFile('data.json', 'utf8', (err,data): void => {
         if (err) {
             Logger.warn("File 'data.json' doesn't exist. \n");
         }
@@ -32,14 +32,14 @@ function checker(callback: CallbackFn): void {
     });
 
     function readDir(): void {
-        fs.readdir('resources',(err): void => {
+        fs.readdir('resources', (err): void => {
             if (err) {
                 Logger.warn("Directory 'resources' doesn't exist. Creating...");
                 mkdir();
             }
             else {
                 Logger.info("Found directory: 'resources'.\n");
-                callback(null,result);
+                callback(null, result);
             }
         });
 
@@ -60,8 +60,8 @@ function checker(callback: CallbackFn): void {
                     Logger.err(err);
                 }
                 else {
-                    Logger.succ('Created.\n');
-                    callback(null,result);
+                    Logger.done('Created.\n');
+                    callback(null, result);
                 }
             });
         }
