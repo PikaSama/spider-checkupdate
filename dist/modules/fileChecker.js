@@ -6,10 +6,12 @@
  * Description: 文件/目录检查模块
  * License: GPL-3.0
  */
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.checker = void 0;
 // 本地模块
-const fs = require("fs");
+const fs_1 = __importDefault(require("fs"));
 const misc_1 = require("./misc");
 // 主函数
 function checker(callback) {
@@ -17,7 +19,7 @@ function checker(callback) {
         hostsDate: '',
         codeDate: '',
     };
-    fs.readFile('data.json', 'utf8', (err, data) => {
+    fs_1.default.readFile('data.json', 'utf8', (err, data) => {
         if (err) {
             misc_1.Logger.warn("File 'data.json' doesn't exist. \n");
         }
@@ -28,7 +30,7 @@ function checker(callback) {
         readDir();
     });
     function readDir() {
-        fs.readdir('resources', (err) => {
+        fs_1.default.readdir('resources', (err) => {
             if (err) {
                 misc_1.Logger.warn("Directory 'resources' doesn't exist. Creating...");
                 mkdir();
@@ -39,7 +41,7 @@ function checker(callback) {
             }
         });
         function mkdir() {
-            fs.mkdir('resources', (err) => {
+            fs_1.default.mkdir('resources', (err) => {
                 if (err) {
                     misc_1.Logger.err(err);
                 }
@@ -49,16 +51,16 @@ function checker(callback) {
             });
         }
         function chmod() {
-            fs.chmod('resources', 0o777, (err) => {
+            fs_1.default.chmod('resources', 0o777, (err) => {
                 if (err) {
                     misc_1.Logger.err(err);
                 }
                 else {
-                    misc_1.Logger.succ('Created.\n');
+                    misc_1.Logger.done('Created.\n');
                     callback(null, result);
                 }
             });
         }
     }
 }
-exports.checker = checker;
+exports.default = checker;

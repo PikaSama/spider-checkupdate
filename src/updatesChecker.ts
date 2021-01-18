@@ -1,10 +1,10 @@
 import axios from 'axios';
-import * as cheerio from 'cheerio';
-import * as NodeZip from 'node-stream-zip';
+import cheerio from 'cheerio';
+import NodeZip from 'node-stream-zip';
 
-import * as fs from 'fs';
-import { checkFile as readSettings } from './modules/settings';
-import { checker as checkDataAndDir } from './modules/fileChecker';
+import fs from 'fs';
+import readSettings from './modules/settings';
+import checkDataAndDir from './modules/fileChecker';
 
 import {
     Result,
@@ -12,7 +12,6 @@ import {
     downloadFile,
     changeMode,
 } from "./modules/misc";
-import {down} from "inquirer/lib/utils/readline";
 
 let settings: Result;
 let storagedData: Result;

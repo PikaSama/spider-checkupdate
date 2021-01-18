@@ -10,7 +10,7 @@
 import { whiteBright as chalk } from 'chalk';
 import axios, { AxiosRequestConfig } from "axios";
 
-import * as fs from 'fs';
+import fs from 'fs';
 
 // 回调结果 -- 模块
 interface Result {

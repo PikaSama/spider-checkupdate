@@ -7,7 +7,8 @@
  */
 
 // 本地模块
-import * as fs from 'fs';
+import fs from 'fs';
+
 import {
     CallbackFn,
     Result,
@@ -68,4 +69,4 @@ function checker(callback: CallbackFn): void {
     }
 }
 
-export { checker };
+export default checker;

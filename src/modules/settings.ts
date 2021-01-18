@@ -6,10 +6,10 @@
  * License: GPL-3.0
  */
 
-import * as inquirer from 'inquirer';
+import inquirer from 'inquirer';
 
 // 本地模块
-import * as fs from 'fs';
+import fs from 'fs';
 import {
     CallbackFn,
     Result,
@@ -76,4 +76,4 @@ function checkFile(callback: CallbackFn): void {
     }
 }
 
-export { checkFile };
+export default checkFile;
