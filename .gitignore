@@ -1,6 +1,13 @@
+# IDE
+.idea/
+
+# Node
 node_modules/
-data.json
-resources
-settings.json
+
+# Package manager
 package-lock.json
 yarn.lock
+*.log
+
+# Typescript
+*.tsbuildinfo
