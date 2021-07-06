@@ -11,7 +11,7 @@
         "node-stream-zip": "^1.11.3"
     },
     "devDependencies": {
-        "@types/cheerio": "0.22.29",
+        "@types/cheerio": "0.22.30",
         "@types/inquirer": "7.3.1",
         "@types/node": "14.17.1",
         "@typescript-eslint/eslint-plugin": "4.26.0",
